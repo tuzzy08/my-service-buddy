@@ -1,4 +1,4 @@
-import { RVForm } from '@/components/RVForm';
+import { StudyForm } from '@/components/StudyForm';
 import { useState } from 'react';
 import { H4 } from 'tamagui';
 import {
@@ -7,17 +7,17 @@ import {
 } from 'react-native-responsive-screen';
 import { StyleSheet, View } from 'react-native';
 
-export default function ReturnVisit() {
+export default function Page() {
 	const [status, setStatus] = useState<'off' | 'submitting' | 'submitted'>(
 		'off'
 	);
 	const handleSubmit = () => {};
 	return (
 		<View style={{ flex: 1, padding: 15 }}>
-			<H4 style={{ marginTop: 10 }}>Record New Return Visit</H4>
+			<H4 style={{ marginTop: 10 }}>Record a study</H4>
 			<View style={styles.container}>
 				<View style={styles.formContainer}>
-					<RVForm submitHandler={handleSubmit} />
+					<StudyForm submitHandler={handleSubmit} />
 				</View>
 			</View>
 		</View>

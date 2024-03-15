@@ -12,13 +12,15 @@ import {
 import { StyleSheet, Text, View } from 'react-native';
 import React from 'react';
 
-export function RVForm({ submitHandler }: { submitHandler: () => void }) {
+export function StudyForm({ submitHandler }: { submitHandler: () => void }) {
 	return (
 		<Form onSubmit={submitHandler}>
 			<YStack gap={15}>
+				{/* TODO: Render Select Component to list existing students */}
+				<XStack alignItems='center' gap='$4'></XStack>
 				<XStack alignItems='center' gap='$4'>
-					<Label width={90} htmlFor='name'>
-						Name
+					<Label width={100} htmlFor='name'>
+						Student Name
 					</Label>
 					<Input flex={1} id='name' placeholder='Enter Name' />
 				</XStack>
@@ -26,19 +28,19 @@ export function RVForm({ submitHandler }: { submitHandler: () => void }) {
 					<Label width={90} htmlFor='address'>
 						Address
 					</Label>
-					<Input flex={1} id='address' placeholder='01234567' />
+					<Input flex={1} id='address' placeholder='Address' />
 				</XStack>
 				<XStack alignItems='center' gap='$4'>
 					<Label width={90} htmlFor='phone'>
-						Phone(if any)
+						Publication
 					</Label>
-					<Input flex={1} id='phone' placeholder='01234567' />
+					<Input flex={1} id='phone' placeholder='Publication Name' />
 				</XStack>
 				<XStack alignItems='center' gap='$4'>
 					<Label width={90} htmlFor='date'>
 						Date
 					</Label>
-					<Input flex={1} id='date' placeholder='01234567' />
+					<Input flex={1} id='date' placeholder='Enter Date' />
 				</XStack>
 				<TextArea
 					id='notes'
