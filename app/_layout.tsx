@@ -61,8 +61,8 @@ function RootLayoutNav() {
 				>
 					<Stack screenOptions={{ animation: 'fade_from_bottom' }}>
 						<Stack.Screen name='(tabs)' options={{ headerShown: false }} />
-						<Stack.Screen name='newBS' options={{ headerTitle: '' }} />
-						<Stack.Screen name='newRV' options={{ headerTitle: '' }} />
+						<Stack.Screen name='newStudy' options={{ headerTitle: '' }} />
+						<Stack.Screen name='newVisit' options={{ headerTitle: '' }} />
 
 						<Stack.Screen name='modal' options={{ presentation: 'modal' }} />
 					</Stack>

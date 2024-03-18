@@ -26,9 +26,9 @@ export default function ReturnVisit() {
 					size='$3'
 					backgroundColor={'#8a00d4'}
 					iconAfter={<Entypo name='briefcase' size={24} color='black' />}
-					onPress={() => router.push('/newRV')}
+					onPress={() => router.push('/newVisit')}
 				>
-					New RV
+					Create New
 				</Button>
 			</View>
 

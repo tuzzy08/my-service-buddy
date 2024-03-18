@@ -26,9 +26,9 @@ export default function Page() {
 					size='$3'
 					backgroundColor={'#8a00d4'}
 					iconAfter={<Entypo name='book' size={24} color='black' />}
-					onPress={() => router.push('/newBS')}
+					onPress={() => router.push('/newStudy')}
 				>
-					New Study
+					Record Study
 				</Button>
 			</View>
 

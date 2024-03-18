@@ -11,10 +11,12 @@ export default function ReturnVisit() {
 	const [status, setStatus] = useState<'off' | 'submitting' | 'submitted'>(
 		'off'
 	);
-	const handleSubmit = () => {};
+	const handleSubmit = (data: any) => {
+		console.log(data);
+	};
 	return (
 		<View style={{ flex: 1, padding: 15 }}>
-			<H4 style={{ marginTop: 10 }}>Record New Return Visit</H4>
+			<H4 style={{ marginTop: 20 }}>Record New Return Visit</H4>
 			<View style={styles.container}>
 				<View style={styles.formContainer}>
 					<RVForm submitHandler={handleSubmit} />
@@ -30,8 +32,8 @@ const styles = StyleSheet.create({
 	},
 	container: {
 		flex: 1,
-		marginTop: 50,
-		// justifyContent: 'center',
+		// marginTop: 60,
+		justifyContent: 'center',
 		alignItems: 'center',
 		// borderWidth: 2,
 		// borderColor: 'red',

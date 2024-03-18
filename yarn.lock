@@ -10329,6 +10329,7 @@ __metadata:
     react: "npm:^18.2.0"
     react-dom: "npm:^18.2.0"
     react-helmet-async: "npm:~2.0.4"
+    react-hook-form: "npm:^7.51.0"
     react-native: "npm:0.73.4"
     react-native-calendar-strip: "npm:^2.2.6"
     react-native-calendars: "npm:^1.1304.0"
@@ -11369,6 +11370,15 @@ __metadata:
     react: ^16.6.0 || ^17.0.0 || ^18.0.0
     react-dom: ^16.6.0 || ^17.0.0 || ^18.0.0
   checksum: 8f18cb27e8f5821811d715906b5fe279d4ce7e1e0ef1a565d90d64db386d2e4676fe7f4182d27393eccf7b03ace7d65fb4c406f945d43de3b57acaaa54711831
+  languageName: node
+  linkType: hard
+
+"react-hook-form@npm:^7.51.0":
+  version: 7.51.0
+  resolution: "react-hook-form@npm:7.51.0"
+  peerDependencies:
+    react: ^16.8.0 || ^17 || ^18
+  checksum: 2697e2b56afca36098aed04d187e9756641e1f61e1a29c566b7bba0899c885fc5f995219a29a9535db748bd55e186cdf95ff8af546247a4bf3418a00863cbd24
   languageName: node
   linkType: hard
 

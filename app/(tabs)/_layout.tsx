@@ -34,7 +34,7 @@ export default function TabLayout() {
 				}}
 			/>
 			<Tabs.Screen
-				name='rv'
+				name='visit'
 				options={{
 					title: 'Return Visits',
 					tabBarIcon: ({ color }) => (
@@ -43,7 +43,7 @@ export default function TabLayout() {
 				}}
 			/>
 			<Tabs.Screen
-				name='bs'
+				name='study'
 				options={{
 					title: 'Bible Study',
 					tabBarIcon: ({ color }) => <TabBarIcon name='book' color={color} />,
