@@ -6,13 +6,21 @@ import {
 	heightPercentageToDP as hp,
 } from 'react-native-responsive-screen';
 import { StyleSheet, View } from 'react-native';
+import { StudentData, useStudent } from '@/hooks/useStudent';
 
 export default function ReturnVisit() {
 	const [status, setStatus] = useState<'off' | 'submitting' | 'submitted'>(
 		'off'
 	);
-	const handleSubmit = (data: any) => {
-		console.log(data);
+	const { createStudent } = useStudent();
+	const handleSubmit = async (formData: any) => {
+		console.log(formData);
+		// const data = JSON.parse(formData);
+		try {
+			await createStudent(formData);
+		} catch (err) {
+			console.log(err);
+		}
 	};
 	return (
 		<View style={{ flex: 1, padding: 15 }}>

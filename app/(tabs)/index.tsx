@@ -7,7 +7,7 @@ import { useColorScheme } from '@/components/useColorScheme';
 import { ScrollView, StyleSheet, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { useQuery } from '@realm/react';
-import { Studies } from '@/realm/models/Studies';
+import { Studies, Student } from '@/realm/models';
 import { Card } from '@/components/Card';
 import Colors from '@/constants/Colors';
 import { Calendar } from '@/components/Calendar';
@@ -18,8 +18,8 @@ const colors = ['#8a00d4', '#d527b7', '#f782c2', '#f9c46b'];
 
 export default function Index() {
 	const colorScheme = useColorScheme();
-	const studies = useQuery(Studies);
-	console.log('studies', studies);
+	const students = useQuery(Student);
+	console.log('students', students);
 	return (
 		<SafeAreaView
 			style={{

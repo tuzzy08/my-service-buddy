@@ -30,6 +30,7 @@ export function RVForm({
 			date: '',
 		},
 	});
+
 	return (
 		<Form onSubmit={handleSubmit(submitHandler)}>
 			<YStack gap={27}>
@@ -46,7 +47,6 @@ export function RVForm({
 						render={({ field: { onChange, onBlur, value } }) => (
 							<Input
 								flex={1}
-								id='name'
 								placeholder='Enter Student Name'
 								onBlur={onBlur}
 								onChangeText={onChange}
@@ -70,7 +70,6 @@ export function RVForm({
 						render={({ field: { onChange, onBlur, value } }) => (
 							<Input
 								flex={1}
-								id='address'
 								placeholder='No.1 Abc street..'
 								onBlur={onBlur}
 								onChangeText={onChange}
@@ -93,7 +92,6 @@ export function RVForm({
 						render={({ field: { onChange, onBlur, value } }) => (
 							<Input
 								flex={1}
-								id='publication'
 								placeholder='Ex. Enjoy Life Forever'
 								onBlur={onBlur}
 								onChangeText={onChange}
@@ -114,7 +112,6 @@ export function RVForm({
 						render={({ field: { onChange, onBlur, value } }) => (
 							<Input
 								flex={1}
-								id='date'
 								placeholder=''
 								onBlur={onBlur}
 								onChangeText={onChange}
@@ -127,11 +124,10 @@ export function RVForm({
 				<Controller
 					control={control}
 					rules={{
-						required: true,
+						required: false,
 					}}
 					render={({ field: { onChange, onBlur, value } }) => (
 						<TextArea
-							id='note'
 							onBlur={onBlur}
 							onChangeText={onChange}
 							value={value}

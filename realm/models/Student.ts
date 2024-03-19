@@ -1,14 +1,5 @@
 import Realm, { ObjectSchema, BSON } from 'realm';
 
-// interface IStudent {
-//   name: string;
-//   address: string;
-//   phone?: number;
-//   email?: string;
-//   current_publication?: string;
-//   createdAt: string;
-// }
-
 export class Student extends Realm.Object<Student> {
 	_id: BSON.ObjectId = new BSON.ObjectId();
 	name!: string;
@@ -21,7 +12,6 @@ export class Student extends Realm.Object<Student> {
 			name: { type: 'string', indexed: true },
 			address: 'string',
 			phone: { type: 'int', optional: true },
-			// publication: { type: 'string', optional: true },
 			email: { type: 'string', optional: true },
 			current_publication: { type: 'string', optional: true },
 			// A student's list of bible studies done.
